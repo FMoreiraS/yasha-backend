@@ -35,7 +35,7 @@ public class ProductService {
             //             new NotFoundResourceException("Product with " + name + " name not found."));
             // }
                     
-    public Product saveProduct(Product productToSave) {
+    public Product save(Product productToSave) {
         return productRepository.save(productToSave);
     }
     
