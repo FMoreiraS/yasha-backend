@@ -22,7 +22,7 @@ public class ProductService {
         //         orElseThrow(() -> new EmptyDatabaseException("Do not exist any product."));
     }
 
-    public Product findProductById(long id) {
+    public Product findById(long id) {
         return productRepository.findById(id).
                orElseThrow(() ->
                 new NotFoundResourceException("Product with ID " + id + " not found."));
