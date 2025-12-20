@@ -8,11 +8,13 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Category {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String path;
+    private String tagName;
+    private Long price;
+    private Long oldPrice;
+    private String description;
 }
-
