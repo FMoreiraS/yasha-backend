@@ -27,9 +27,6 @@ public class ProductServiceTest {
     @InjectMocks
     private ProductService service;
 
-    @InjectMocks
-    private ProductMapper mapper;
-
     static Product parfum;
 
     @BeforeAll
